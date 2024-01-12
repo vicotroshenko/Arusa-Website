@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/arusa-website/static/css/main.f855e6bc.css",
+    "main.js": "/arusa-website/static/js/main.bc8bceab.js",
+    "static/js/787.e3b3c168.chunk.js": "/arusa-website/static/js/787.e3b3c168.chunk.js",
+    "static/media/logo.svg": "/arusa-website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/arusa-website/index.html",
+    "main.f855e6bc.css.map": "/arusa-website/static/css/main.f855e6bc.css.map",
+    "main.bc8bceab.js.map": "/arusa-website/static/js/main.bc8bceab.js.map",
+    "787.e3b3c168.chunk.js.map": "/arusa-website/static/js/787.e3b3c168.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.bc8bceab.js"
+  ]
+}
