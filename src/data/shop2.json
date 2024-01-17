@@ -1,33 +1,49 @@
 [
   {
+    "title": "NATIVE IRON CHAIR",
+    "price": "4.990",
     "image": "https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/img%D0%A1-1.jpg?raw=true",
     "desc": "dark blue couch"
   },
   {
+    "title": "CENTURY DASHE",
+    "price": "1.790",
     "image": "https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/img%D0%A1-2.jpg?raw=true",
     "desc": "wooden bedside table"
   },
   {
+    "title": "NATIVE LIGHT CHAIR",
+    "price": "4.990",
     "image": "https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/img%D0%A1-3.jpg?raw=true",
     "desc": "chandelier"
   },
   {
+    "title": "PAOLA WOOD LAMP",
+    "price": "5.990",
     "image": "https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/img%D0%A1-4.jpg?raw=true",
     "desc": "blue bedside table"
   },
   {
+    "title": "NATIVE IRON CHAIR",
+    "price": "4.990",
     "image": "https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/img%D0%A1-5.jpg?raw=true",
     "desc": "grey couch"
   },
   {
+    "title": "CENTURY DASHE",
+    "price": "1.790",
     "image": "https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/img%D0%A1-6.jpg?raw=true",
     "desc": "white bedside table"
   },
   {
+    "title": "NATIVE LIGHT CHAIR",
+    "price": "4.990",
     "image": "https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/img%D0%A1-7.jpg?raw=true",
     "desc": "colorful chandelier"
   },
   {
+    "title": "PAOLA WOOD LAMP",
+    "price": "4.990",
     "image": "https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/img%D0%A1-8.jpg?raw=true",
     "desc": "dispenser"
   }

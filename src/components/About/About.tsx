@@ -5,43 +5,18 @@ import React, { useEffect, useRef, useState } from "react";
 
 
 const About = () => {
-  const [windowWSized, setWindowWSized] = useState<number>(window.innerWidth);
-  const containerRef = useRef<HTMLUListElement | null>(null);
-
-  console.log("w", Math.floor(windowWSized / 50));
-
-  useEffect(() => {
-    // let windowSize = containerRef.current?.offsetWidth;
-    // console.log(windowSize);
-    // if(windowSize !== windowWSized){
-    //   setWindowWSized(windowSize)
-    // }
-    const onResize = (event: Event) => {
-      const target = event.target as Window
-      setWindowWSized(target.innerWidth)
-    }
-    
-    window.addEventListener("resize", onResize)
-
-    return () => {
-      window.removeEventListener("resize", onResize)
-    }
-    
-  }, [])
-
-
   
   return (
     <Container bgColor="secondary">
-      <ul className="aboutContainer" ref={containerRef} style={{"--windowSW": `${windowWSized}px`} as React.CSSProperties}>
+      <ul className="aboutContainer">
         <li className="aboutItem">
-          <img src="https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/imgA-1.jpg?raw=true" alt="" className="aboutImage" />
+          <img src="https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/imgA-1.jpg?raw=true" alt="" className="aboutImage" loading="lazy"/>
         </li>
         <li className="aboutItem">
-          <img src="https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/imgA-2.jpg?raw=true" alt="" className="aboutImage" />
+          <img src="https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/imgA-2.jpg?raw=true" alt="" className="aboutImage" loading="lazy"/>
         </li>
         <li className="aboutItem">
-          <img src="https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/imgA-3.jpg?raw=true" alt="" className="aboutImage" />
+          <img src="https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/imgA-3.jpg?raw=true" alt="" className="aboutImage" loading="lazy"/>
         </li>
         <li className="aboutItem aboutTitle">
           <Typography variant="h2" sx={{ 
@@ -63,13 +38,13 @@ const About = () => {
 					<Button variant="contained" >show all</Button>
         </li>
         <li className="aboutItem">
-          <img src="https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/imgA-4.jpg?raw=true" alt="" className="aboutImage" />
+          <img src="https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/imgA-4.jpg?raw=true" alt="" className="aboutImage" loading="lazy"/>
         </li>
         <li className="aboutItem">
-          <img src="https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/imgA-5.jpg?raw=true" alt="" className="aboutImage" />
+          <img src="https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/imgA-5.jpg?raw=true" alt="" className="aboutImage" loading="lazy"/>
         </li>
         <li className="aboutItem">
-          <img src="https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/imgA-6.jpg?raw=true" alt="" className="aboutImage" />
+          <img src="https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/imgA-6.jpg?raw=true" alt="" className="aboutImage" loading="lazy"/>
         </li>
       </ul>
     </Container>

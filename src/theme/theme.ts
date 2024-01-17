@@ -22,6 +22,7 @@ declare module "@mui/material/styles" {
   interface PaletteColorBack {
     main?: string;
     secondary?: string;
+    grey?: string;
   }
   interface BackPaletteColorOptions extends PaletteColorBack { }
 }
@@ -44,6 +45,7 @@ const theme = createTheme({
     backgroundP: {
       main: "#384353",
       secondary: "#FCFDFD",
+      grey: "#E0E0E0"
     },
     textP: {
       main: "#FCFDFD",

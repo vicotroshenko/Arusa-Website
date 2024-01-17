@@ -1,17 +1,21 @@
 [
-  {
+  { "title": "NATIVE IRON CHAIR",
+    "price": "4.990",
     "image": "https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/imgB-1.jpg?raw=true",
     "desc": "sheet"
   },
-  {
+  { "title": "CENTURY DASHE",
+    "price": "1.799",
     "image": "https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/imgB-2.jpg?raw=true",
     "desc": "lamps"
   },
-  {
+  { "title": "NATIVE LIGHT CHAIR",
+    "price": "4.990",
     "image": "https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/imgB-3.jpg?raw=true",
     "desc": "armchair"
   },
-  {
+  { "title": "PAOLA WOOD LAMP",
+    "price": "5.990",
     "image": "https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/imgB-4.jpg?raw=true",
     "desc": "green pillows"
   }

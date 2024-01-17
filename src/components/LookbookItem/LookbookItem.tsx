@@ -1,0 +1,33 @@
+import { Stack, Typography } from "@mui/material";
+import React from "react";
+
+interface ILookbookItemProps {
+	title: string;
+	desc: string;
+  mobileNone: "none" | "flex" | "block";
+}
+
+const LookbookItem: React.FC<ILookbookItemProps> = ({ title, desc, mobileNone }) => {
+  return (
+    <Stack
+      direction="row"
+      justifyContent="space-between"
+      padding="6px 17px 10px 21px"
+      width="100%"
+      sx={{
+        display: {
+          xs: mobileNone,
+          md: "flex",
+        },
+        borderTop: "1px solid",
+        borderBottom: "1px solid",
+        borderColor: "primary.dark",
+      }}
+    >
+      <Typography variant="body1" textTransform="uppercase">{title}</Typography>
+      <Typography variant="body1" textTransform="uppercase">{desc}</Typography>
+    </Stack>
+  );
+};
+
+export default LookbookItem;
