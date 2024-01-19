@@ -15,9 +15,16 @@
 	grid-column: 1/-1;
 	justify-self: center;
 	max-width: 343px;
+	padding-top: 36px;
 	text-align: center;
 	width: transform;
 	animation: showTitle 1s ease-out;
+}
+
+@media screen and (min-width: 600px) {
+	.aboutTitle {
+		padding: 0;
+	}
 }
 
 @media screen and (min-width: 980px) {
@@ -31,6 +38,7 @@
 	--transformIndexTo: translate(0, 106px);
 	max-width: 102px;
 	width: 100%;
+	display: none;
 	will-change: transform;
 	align-self: flex-end;
 	transform: var(--transformIndexTo);

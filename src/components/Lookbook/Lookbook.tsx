@@ -27,6 +27,7 @@ const Lookbook = () => {
               md: "flex",
             },
             borderRight: "1px solid",
+            borderLeft: "1px solid",
             borderColor: "primary.dark",
           }}
         >
@@ -40,7 +41,7 @@ const Lookbook = () => {
         <Stack
           direction="column"
           alignItems="center"
-					justifyContent="space-between"
+          justifyContent="space-between"
           padding="50px 10px 170px 10px"
           sx={{
             height: {
@@ -50,7 +51,7 @@ const Lookbook = () => {
             width: {
               xs: "100%",
               md: "52%",
-            }
+            },
           }}
         >
           <Typography
@@ -66,7 +67,12 @@ const Lookbook = () => {
           >
             LOOKBOOK
           </Typography>
-          <Typography variant="subtitle1" textAlign="center" maxWidth="414px" width="100%">
+          <Typography
+            variant="subtitle1"
+            textAlign="center"
+            maxWidth="414px"
+            width="100%"
+          >
             The pieces stand out for their contemporary straight lines and
             imposing presence. Current, following the world trend of the great
             masters, the furniture stands out for its noble and innovative
@@ -86,11 +92,17 @@ const Lookbook = () => {
               md: "43%",
             },
             borderLeft: "1px solid",
+            borderRight: "1px solid",
             borderColor: "primary.dark",
             padding: "22px 0 23px 0",
           }}
         >
-          <LookbookItem title="ITEM" desc="DESCRIPTION" mobileNone="none" />
+          <LookbookItem
+            title="ITEM"
+            desc="DESCRIPTION"
+            mobileNone="none"
+            borders={["top", "bottom"]}
+          />
           <Stack
             padding="20px 20px 95px 21px"
             margin="20px 20px 23px 21px"
@@ -112,19 +124,26 @@ const Lookbook = () => {
             title="MATERIALS"
             desc="CERAMIC, GLASS, IRON, WOOD"
             mobileNone="flex"
+            borders={["top"]}
           />
           <LookbookItem
             title="PRODUCED IN:"
             desc="CANADA, ITALY, UNITED STATES"
             mobileNone="flex"
+            borders={["top"]}
           />
           <LookbookItem
             title="CATEGORIES:"
             desc="DECORATION, LAMP, FURNITURE"
             mobileNone="flex"
+            borders={["top", "bottom"]}
           />
         </Stack>
-        <TitleDivider color="light2" bgColor="main" text="Enjoy our feature products" />
+        <TitleDivider
+          color="light2"
+          bgColor="main"
+          text="Enjoy our feature products"
+        />
       </Stack>
     </Container>
   );

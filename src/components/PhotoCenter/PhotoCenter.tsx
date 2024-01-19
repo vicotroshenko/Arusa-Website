@@ -1,6 +1,6 @@
 import { Box, Stack } from "@mui/material";
-import React from "react";
 import Container from "../Container/Container";
+import "./PhotoCenter.css";
 
 const imageBg =
   "https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/third-bg.jpg?raw=true";
@@ -21,10 +21,11 @@ const PhotoCenter = () => {
           background: `center/cover no-repeat url(${imageBg})`,
         }}
       >
-        <Box maxWidth="392px" width="392px" height="502px" sx={{
+        <Box maxWidth="392px" width="100%" height="502px" sx={{
 					boxShadow: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
+          overflow: "hidden",
 				}}>
-          <img src={imageFront} alt="black vase" width="100%" />
+          <img src={imageFront} alt="black vase" className="photoCenter"/>
         </Box>
       </Stack>
     </Container>

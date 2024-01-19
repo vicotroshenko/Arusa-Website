@@ -1,4 +1,5 @@
 import { Link, Stack } from "@mui/material";
+import { getBorders } from '../../helpers/getBorders';
 
 interface ILinkObject {
   name: string;
@@ -6,32 +7,12 @@ interface ILinkObject {
 }
 interface IFooterItemProps {
   links: ILinkObject[];
+  borders?: string[],
 }
 
-const links1: ILinkObject[] = [
-  {
-    name: "STORE",
-    link: "/",
-  },
-  {
-    name: "Home",
-    link: "/",
-  },
-  {
-    name: "About",
-    link: "/",
-  },
-  {
-    name: "Journal",
-    link: "/",
-  },
-  {
-    name: "Contact",
-    link: "/",
-  },
-];
-
-const FooterItem: React.FC<IFooterItemProps> = ({ links = [] }) => {
+const FooterItem: React.FC<IFooterItemProps> = ({ links = [], borders=[] }) => {
+  const specifyBorders = getBorders(borders);
+  
   return (
     <Stack
       direction="column"
@@ -45,8 +26,7 @@ const FooterItem: React.FC<IFooterItemProps> = ({ links = [] }) => {
           xs: "16px 15px 16px 12px",
           md: "25px 0 25px 56px",
         },
-        borderRight: "1px solid",
-        borderBottom: "1px solid",
+        ...specifyBorders,
         borderColor: "primary.dark",
       }}
     >

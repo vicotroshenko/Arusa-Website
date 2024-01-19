@@ -1,7 +1,6 @@
 import theme from "../../theme/theme";
 import About from "../About/About";
 import ArticleCard from "../ArticleCard/ArticleCard";
-import ButtonDivider from "../ButtonDivider/ButtonDivider";
 import Details from "../Details/Details";
 import Footer from "../Footer/Footer";
 import RoomWithCards from "../RoomWithCards/RoomWithCards";
@@ -25,7 +24,8 @@ const lenis = new Lenis()
 function App() {
 
   useEffect(() => {
-    lenis.on('scroll', (e:any) => {})
+    lenis.on('scroll', (e:any) => {
+    })
 
     function raf(time:any) {
       lenis.raf(time)
@@ -36,10 +36,8 @@ function App() {
   
   return (
     <ThemeProvider theme={theme}>
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
-          <Header />
-          <main>
+    <Header />
+          <main style={{overflow: "hidden"}}>
             <Hero />
             <About />
             <ProductListPrimary />
@@ -54,8 +52,6 @@ function App() {
             <Subscribe />
           </main>
           <Footer />
-        </div>
-      </div>
     </ThemeProvider>
   );
 }

@@ -1,13 +1,17 @@
 import { Stack, Typography } from "@mui/material";
 import React from "react";
+import { getBorders } from "../../helpers/getBorders";
 
 interface ILookbookItemProps {
 	title: string;
 	desc: string;
   mobileNone: "none" | "flex" | "block";
+  borders?: string[];
 }
 
-const LookbookItem: React.FC<ILookbookItemProps> = ({ title, desc, mobileNone }) => {
+const LookbookItem: React.FC<ILookbookItemProps> = ({ title, desc, mobileNone, borders=[] }) => {
+
+  const specifyBorders = getBorders(borders)
   return (
     <Stack
       direction="row"
@@ -19,8 +23,7 @@ const LookbookItem: React.FC<ILookbookItemProps> = ({ title, desc, mobileNone })
           xs: mobileNone,
           md: "flex",
         },
-        borderTop: "1px solid",
-        borderBottom: "1px solid",
+        ...specifyBorders,
         borderColor: "primary.dark",
       }}
     >

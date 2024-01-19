@@ -25,7 +25,14 @@ const Hero = () => {
       >
         <Typography
           variant="h1"
-          sx={{ fontStyle: "italic", width: "70vw", textAlign: "center" }}
+          sx={{ fontStyle: "italic", width: "70vw", textAlign: "center", fontSize: {
+            xs: "2.4rem",
+            md: "6rem"
+          },
+        letterSpacing: {
+          xs: "-0.5px",
+            md: "-2.24px"
+        } }}
         >
           Seamless furniture with natural fabrics
         </Typography>

@@ -1,4 +1,4 @@
-import { createTheme, TextField } from '@mui/material';
+import { createTheme } from '@mui/material';
 
 declare module "@mui/material/styles" {
   interface Palette {
@@ -64,7 +64,7 @@ const theme = createTheme({
     fontSize: 15,
     h1: {
       fontFamily: "Merriweather, sans-serif",
-      fontSize: "6.4rem", //96px
+      fontSize: "6.0rem", //96px
       fontWeight: 400,
       letterSpacing: "-4.8px",
       lineHeight: 1,

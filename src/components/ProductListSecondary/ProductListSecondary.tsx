@@ -22,6 +22,9 @@ const ProductListSecondary = () => {
 						justifyContent: "center",
 						padding: "24px 16px",
 						maxWidth: "1440px",
+						borderRight: "1px solid",
+						borderLeft: "1px solid",
+						borderColor: "primary.dark"
 					}}
 				>
 					{cards2.map(({ image, title, price, desc }, index) => (

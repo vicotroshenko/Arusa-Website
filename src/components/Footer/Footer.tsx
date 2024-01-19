@@ -2,11 +2,6 @@ import { Stack, Typography } from "@mui/material";
 import { links1, links2, links3, links4 } from "./links";
 import FooterItem from "../FooterItem/FooterItem";
 
-interface ILinkObject {
-  name: string;
-  link: string;
-}
-
 const Footer = () => {
   return (
     <Stack direction="row" justifyContent="center" alignItems="center" sx={{ backgroundColor: "backgroundP.main" }}>
@@ -18,10 +13,10 @@ const Footer = () => {
       maxWidth="1440px"
       margin="0 auto"
     >
-      <FooterItem links={links1} />
-      <FooterItem links={links2} />
-      <FooterItem links={links3} />
-      <FooterItem links={links4} />
+      <FooterItem links={links1} borders={["left", "right", "bottom"]} />
+      <FooterItem links={links2} borders={["right", "bottom"]}/>
+      <FooterItem links={links3} borders={["right", "bottom"]}/>
+      <FooterItem links={links4} borders={["right", "bottom"]}/>
       <Stack
         direction="row"
         width="100%"

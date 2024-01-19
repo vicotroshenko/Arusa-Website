@@ -9,6 +9,7 @@ const productText =
   "Interior designer Sarah Vaile remembers eyeing a New York City apartment—one with bold colors and a personality as distinct as its chic owner—in a 2014 issue of House Beautiful, and tucking it away for future design inspiration. Years later, in a serendipitous turn of events, the woman she’d seen in the magazine—a stylish figure now in her 30s—just moved to Chicago.";
 
 const StoriesBlock = () => {
+
   const handleClick = () => {
     console.log("button see all articles - done");
   };
@@ -49,6 +50,7 @@ const StoriesBlock = () => {
               md: "flex",
             },
             borderRight: "1px solid",
+            borderLeft: "1px solid",
             borderColor: "primary.dark",
           }}
         >
@@ -80,19 +82,19 @@ const StoriesBlock = () => {
             </Link>
           </Stack>
         </Stack>
-        <Box
-          sx={{
-            background: `center/cover no-repeat url(${bgImage})`,
-            width: {
-              xs: "100%",
-              md: "50%",
-            },
-            height: {
-              xs: "320px",
-              md: "auto",
-            },
-          }}
-        ></Box>
+          <Box
+            sx={{
+              background: `center/cover no-repeat url(${bgImage})`,
+              width: {
+                xs: "100%",
+                md: "50%",
+              },
+              height: {
+                xs: "320px",
+                md: "auto",
+              },
+            }}
+          ></Box>
       </Stack>
       <ButtonDivider
         color="dark1"

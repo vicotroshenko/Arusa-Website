@@ -20,11 +20,15 @@ const Header = () => {
         direction="row"
         justifyContent="space-between"
         alignItems="center"
+        gap="28px"
         sx={{
-          maxWidth: 1440,
+          maxWidth: "1440px",
           width: "100%",
           height: "100%",
-          padding: '0 72px',
+          padding: {
+            xs: "0 10px",
+            md: '0 72px',
+          },
         }}
       >
         <Stack direction="row" alignItems="center">

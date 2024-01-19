@@ -1,7 +1,6 @@
 import { Button, Typography } from "@mui/material";
 import Container from "../Container/Container";
 import "./About.css";
-import React, { useEffect, useRef, useState } from "react";
 import TitleDivider from "../TitleDivider/TitleDivider";
 
 

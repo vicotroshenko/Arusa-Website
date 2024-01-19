@@ -1,7 +1,5 @@
 import {
   Box,
-  ImageList,
-  ImageListItem,
   Stack,
   Typography,
 } from "@mui/material";
@@ -109,6 +107,8 @@ const Details = () => {
               xs: "none",
               md: "flex",
             },
+            borderLeft: "1px solid",
+            borderColor: "primary.dark"
           }}
         >
           <Typography
@@ -125,6 +125,8 @@ const Details = () => {
               xs: "column",
               md: "row",
             },
+            borderRight: "1px solid",
+            borderColor: "primary.dark",
           }}
         >
           <Box
