@@ -8,6 +8,8 @@ const pic2 =
   "https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/bedside-table.jpg?raw=true";
 const bgPic =
   "https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/secondary-bg.jpg?raw=true";
+const bgPicTablet = "https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/secondary-bg-tablet.jpg?raw=true";
+
 
 const RoomWithCards = () => {
   return (
@@ -18,7 +20,10 @@ const RoomWithCards = () => {
         maxWidth="1440px"
         justifyContent="space-around"
         sx={{
-          background: `center / cover no-repeat url(${bgPic})`,
+          background: {
+            xs: `center / cover no-repeat url(${bgPicTablet})`,
+            md: `center / cover no-repeat url(${bgPic})`,
+          },
           minHeight: {
             xs: "664px",
             md: "1081px",

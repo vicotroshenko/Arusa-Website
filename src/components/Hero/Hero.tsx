@@ -3,7 +3,7 @@ import Container from "../Container/Container";
 
 const heroBg =
   "https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/hero-bg.jpg?raw=true";
-
+const heroBgTablet = "https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/hero-bg-tablet.jpg?raw=true";
 const Hero = () => {
   return (
     <Container bgColor="secondary">
@@ -16,7 +16,10 @@ const Hero = () => {
           maxWidth: "1440px",
 					width: "100%",
           height: "100vh",
-					background: `center / cover no-repeat url(${heroBg})`,
+					background: {
+            xs: `center / cover no-repeat url(${heroBgTablet})`,
+            md: `center / cover no-repeat url(${heroBg})`,
+          },
           color: "textP.main",
         }}
       >
