@@ -2,6 +2,7 @@ import { Button, Typography } from "@mui/material";
 import Container from "../Container/Container";
 import "./About.css";
 import React, { useEffect, useRef, useState } from "react";
+import TitleDivider from "../TitleDivider/TitleDivider";
 
 
 const About = () => {
@@ -35,7 +36,7 @@ const About = () => {
             The pieces enchant for their sobriety, to last for generations,
             faithful to the shapes of each period, with a touch of the present.
           </Typography>
-					<Button variant="contained" >show all</Button>
+					<Button variant="contained" sx={{ marginTop: "24px" }}>READ ABOUT US</Button>
         </li>
         <li className="aboutItem">
           <img src="https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/imgA-4.jpg?raw=true" alt="" className="aboutImage" loading="lazy"/>
@@ -47,6 +48,7 @@ const About = () => {
           <img src="https://github.com/vicotroshenko/arusa-website/blob/main/src/images/jpeg/imgA-6.jpg?raw=true" alt="" className="aboutImage" loading="lazy"/>
         </li>
       </ul>
+      <TitleDivider color="dark1" bgColor="secondary" text="Enjoy our feature products"/>
     </Container>
   );
 };

@@ -2,6 +2,7 @@ import { Box, Stack, Typography } from "@mui/material";
 import ProductCard from "../ProductCard/ProductCard";
 import Container from "../Container/Container";
 import LookbookItem from "../LookbookItem/LookbookItem";
+import TitleDivider from "../TitleDivider/TitleDivider";
 
 const Lookbook = () => {
   return (
@@ -123,6 +124,7 @@ const Lookbook = () => {
             mobileNone="flex"
           />
         </Stack>
+        <TitleDivider color="light2" bgColor="main" text="Enjoy our feature products" />
       </Stack>
     </Container>
   );

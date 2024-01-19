@@ -1,0 +1,65 @@
+.subscribeForm  {
+	position: relative;
+	max-width: 344px;
+	width: 100%;
+}
+
+.subscribeInput {
+	border: 1px solid #DFDEDB;
+	background-color: transparent;
+	border-radius: 8px;
+	width: 100%;
+	padding: 13px 60px 13px 13px;
+	color: white;
+	font-size: 15px;
+	line-height: 1;
+	
+}
+.subscribeInput:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px black inset;
+	-webkit-text-fill-color: white;
+} 
+
+.subscribeInput:focus {
+	border: 2px solid transparent;
+	outline: 2px solid #DFDEDB;
+	backdrop-filter: blur(3px);
+}
+.subscribeInput:hover {
+	backdrop-filter: blur(3px);
+}
+
+.subscribeButton {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	height: 100%;
+	padding-left: 13px;
+	padding-right: 13px;
+	border: none;
+	border-left: 1px solid #DFDEDB;
+	background-color: transparent;
+	color: #DFDEDB;
+	cursor: pointer;
+	animation: buttonShowUp .25s linear;
+}
+
+.subscribeButton:active {
+	backdrop-filter: blur(1px);
+}
+
+
+@keyframes buttonShowUp {
+	0% {
+		transform: translate(120%, -50%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0, -50%);
+		opacity: 1;
+	}
+}

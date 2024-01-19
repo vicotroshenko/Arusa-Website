@@ -22,7 +22,11 @@ const ProductCard: React.FC<IProductCardProps> = ({
   return (
     <Box
       component="div"
-      sx={{ maxWidth: widthPx, width: "100%", color: `textP.${color}` }}
+      sx={{ 
+        maxWidth: widthPx, 
+        width: "100%", 
+        color: `textP.${color}`, 
+      }}
     >
       <Box
         component="div"

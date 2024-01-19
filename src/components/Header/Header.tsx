@@ -1,6 +1,6 @@
 import logo from "../../images/svg/logo.svg";
 import { IoMdMenu } from "react-icons/io";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, IconButton, Stack, Typography } from "@mui/material";
 
 const Header = () => {
   return (
@@ -27,13 +27,15 @@ const Header = () => {
           padding: '0 72px',
         }}
       >
-        <Stack direction="row">
+        <Stack direction="row" alignItems="center">
+          <IconButton aria-label="menu" size="medium" color="primary" sx={{verticalAlign: "top"}} >
           <IoMdMenu
             style={{
               width: 27,
               height: 14,
             }}
           />
+          </IconButton>
           <Typography variant="body1" sx={{ textTransform: "uppercase" }}>
             home
           </Typography>
